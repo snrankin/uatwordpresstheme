@@ -1,0 +1,39 @@
+#menu{
+	.inner-wrap{
+		@include pie-clearfix;
+		padding: $pad-def/2 $pad-def;
+		.menu-main-menu-container{
+			@include pie-clearfix;
+			@include nav-lists;
+			float: left;
+			height: 1.875em;
+			li{
+				margin-right: $pad-def;
+				a{
+					font-family: $AG;
+					font-size: 1.5em;
+					line-height: 1.875rem;
+					color: $white;
+					&:hover{
+						color: $light-red;
+					}	
+				}	
+			}
+		}
+		#search{
+			float: right;
+			height: 1.875em;
+			.screen-reader-text{
+				display: none;
+			}
+			.fa{
+				line-height: 1.875em;
+			}
+			#s{
+				@include border-radius(20px);
+				height: 1.875em;
+				padding: .5em;
+			}
+		}
+	}
+}
