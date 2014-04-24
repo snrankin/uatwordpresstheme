@@ -28,6 +28,9 @@ body, html{
 	color: $gray;
 }
 
+h1, h2, h3{
+	@include AG;
+}
 
 a{
 	color: $red;

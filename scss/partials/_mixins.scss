@@ -16,6 +16,14 @@
 		margin-left: 5px;
 	}
 }
+@mixin AG{
+	font-family: $AG;
+	font-weight: normal;
+	a{
+		font-family: $AG
+		font-weight: normal;
+	}
+}
 @mixin button{
   @include border-radius(5px);
 	background-color: $red;
