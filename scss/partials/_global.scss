@@ -41,3 +41,22 @@ a{
 		color: $light-red;
 	}
 }
+.navigation{
+	margin: 1em 0;
+	float: right;
+	ul{
+		@include nostyle-ul;
+		@include clearfix;
+		li{
+			@include button;
+			color: $white;
+			float: left;
+			display: block;
+			padding: 0.5em;
+			margin: 0 0.25em;
+		}
+		li.active{
+			background-color: $light-red;
+		}
+	}
+}
