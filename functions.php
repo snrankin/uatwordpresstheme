@@ -134,6 +134,17 @@ register_sidebar( array (
 'after_title' => '</h3>',
 ) );
 }
+if ( function_exists('register_sidebar') ) {
+register_sidebar(array(
+'name' => 'Single Post Sidebar',
+'id' => 'single-sidebar',
+'description' => 'Appears as the sidebar on single posts',
+'before_widget' => '<li id="%1$s" class="widget %2$s">',
+'after_widget' => '</li>',
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+));
+}
 function blankslate_custom_pings( $comment )
 {
 $GLOBALS['comment'] = $comment;
