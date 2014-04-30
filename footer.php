@@ -8,6 +8,15 @@
 </div>
 </footer>
 </div>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $('#why-uat').bjqs({
+        'height' : 400,
+        'width' : 280,
+        'responsive' : true
+    });
+});
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

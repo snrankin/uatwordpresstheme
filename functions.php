@@ -15,6 +15,8 @@ add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
 function blankslate_load_scripts()
 {
 wp_enqueue_script( 'jquery' );
+wp_register_script('basic-slider', get_template_directory_uri() . '/js/vendor/bjs/bjqs.js', array('jquery'), '1.3', false);
+wp_enqueue_script('basic-slider');
 }
 add_action( 'comment_form_before', 'blankslate_enqueue_comment_reply_script' );
 function blankslate_enqueue_comment_reply_script()
