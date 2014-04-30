@@ -13,12 +13,7 @@ array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
 }
 add_filter('stylesheet_uri','wpi_stylesheet_uri',10,2);
 
-/**
- * wpi_stylesheet_uri
- * overwrite default theme stylesheet uri
- * filter stylesheet_uri
- * @see get_stylesheet_uri()
- */
+//overwrite default theme stylesheet uri
 function wpi_stylesheet_uri($stylesheet_uri, $stylesheet_dir_uri){
 
     return $stylesheet_dir_uri.'/css/style.css';
@@ -122,6 +117,11 @@ function new_excerpt_more($more) {
 	return '... <a class="moretag" href="'. get_permalink($post->ID) . '"> Read more &raquo;</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// Allow widgets to use shortcodes
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
+
 add_action( 'widgets_init', 'blankslate_widgets_init' );
 function blankslate_widgets_init()
 {
