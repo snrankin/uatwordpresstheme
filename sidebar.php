@@ -1,4 +1,12 @@
 <aside id="sidebar" role="complementary" class="sidebar">
+<div id="categories" class="widget-area">
+<h2>Categories</h2>
+	<ul>
+		<?php wp_list_categories('orderby=name&show_count=1&show_option_all=&title_li='); ?> 
+    </ul>
+</div>
+<h2>Why UAT?</h2>
+    <p>Hear from the students themselves as to why they chose to attend UAT: </p>
 <div id="why-uat" class="widget-area">
 	<ul class="bjqs">
 		<?php 
@@ -14,7 +22,14 @@
         
           <!-- the loop -->
           <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <li><?php the_excerpt(); ?><?php the_author(); ?></li>
+            <li>
+            	<div class="why-uat-author">
+					<?php userphoto_the_author_thumbnail() ?><br/>
+                    <?php the_author(); ?>
+                </div>
+                <?php the_excerpt(); ?>
+                <a href="<?php the_permalink(); ?>">read full quote</a>
+            </li>
           <?php endwhile; ?>
           <!-- end of the loop -->
         

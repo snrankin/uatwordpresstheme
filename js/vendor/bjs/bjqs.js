@@ -35,8 +35,8 @@
             // control and marker configuration
             showcontrols    : true,     // enable/disable next + previous UI elements
             centercontrols  : true,     // vertically center controls
-            nexttext        : 'Next',   // text/html inside next UI element
-            prevtext        : 'Prev',   // text/html inside previous UI element
+            nexttext        : '<i class="fa fa-chevron-right"></i>',   // text/html inside next UI element
+            prevtext        : '<i class="fa fa-chevron-left"></i>',   // text/html inside previous UI element
             showmarkers     : true,     // enable/disable individual slide UI markers
             centermarkers   : true,     // horizontally center markers
 
@@ -479,7 +479,7 @@
                     gotoslide = key + 2;
                 }
 
-                var marker = $('<li><a href="#">'+ slidenum +'</a></li>');
+                var marker = $('<li><a href="#"><i class="fa fa-circle"></i></a></li>');
 
                 // set the first marker to be active
                 if(slidenum === state.currentslide){ marker.addClass('active-marker'); }

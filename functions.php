@@ -11,6 +11,18 @@ register_nav_menus(
 array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
 );
 }
+add_filter('stylesheet_uri','wpi_stylesheet_uri',10,2);
+
+/**
+ * wpi_stylesheet_uri
+ * overwrite default theme stylesheet uri
+ * filter stylesheet_uri
+ * @see get_stylesheet_uri()
+ */
+function wpi_stylesheet_uri($stylesheet_uri, $stylesheet_dir_uri){
+
+    return $stylesheet_dir_uri.'/css/style.css';
+}
 add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
 function blankslate_load_scripts()
 {

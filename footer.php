@@ -11,9 +11,9 @@
 <script type="text/javascript">
 jQuery(document).ready(function($) {
     $('#why-uat').bjqs({
-        'height' : 400,
+        'height' : 380,
         'width' : 280,
-        'responsive' : true
+        'responsive' : false
     });
 });
 </script>

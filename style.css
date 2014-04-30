@@ -1,4 +1,4 @@
-@import "compass";
+/* Basic jQuery Slider essential styles */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -164,6 +164,20 @@ li.bjqs-slide {
   position: absolute;
   display: none;
 }
+li.bjqs-slide p:before {
+  content: '\f10d';
+  font-family: 'FontAwesome';
+  color: #555;
+  display: inline-block;
+  margin-right: 5px;
+}
+li.bjqs-slide p:after {
+  content: '\f10e';
+  font-family: 'FontAwesome';
+  color: #555;
+  display: inline-block;
+  margin-left: 5px;
+}
 ul.bjqs-controls {
   list-style: none;
   margin: 0;
@@ -174,7 +188,7 @@ ul.bjqs-controls.v-centered li a {
   position: absolute;
 }
 ul.bjqs-controls.v-centered li.bjqs-next a {
-  right: 0;
+  right: -2em;
 }
 ul.bjqs-controls.v-centered li.bjqs-prev a {
   left: 0;
@@ -193,6 +207,7 @@ ol.bjqs-markers li {
 }
 ol.bjqs-markers li a {
   display: inline-block;
+  color: #d7d7d7;
 }
 p.bjqs-caption {
   display: block;
