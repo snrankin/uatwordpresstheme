@@ -16,11 +16,32 @@
 		margin-left: 5px;
 	}
 }
+@mixin border-box{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin clearfix{
+	&:before,
+	&:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 @mixin AG{
 	font-family: $AG;
 	font-weight: normal;
 	a{
-		font-family: $AG
+		font-family: $AG;
 		font-weight: normal;
 	}
 }

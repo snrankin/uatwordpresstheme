@@ -1,9 +1,9 @@
 #menu{
 	.inner-wrap{
-		@include pie-clearfix;
+		@include clearfix;
 		padding: $pad-def/2 $pad-def;
 		.menu-main-menu-container{
-			@include pie-clearfix;
+			@include clearfix;
 			@include nav-lists;
 			float: left;
 			height: 1.875em;
