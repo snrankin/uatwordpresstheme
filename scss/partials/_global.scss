@@ -29,6 +29,7 @@ body, html{
 
 h1, h2, h3{
 	@include AG;
+	margin: 0;
 }
 h1{
 	font-size: 2.5rem;

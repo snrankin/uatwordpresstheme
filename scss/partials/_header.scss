@@ -1,8 +1,40 @@
 #header{
-	background: url('imgs/uat.jpg');
+	background: url('../imgs/uat.jpg');
 	background-size: cover;
 	height: 25.000em;
 	.one-col{
 		background: transparent;
+	}
+	#site-logo{
+		max-width: 100px;
+		float: left;
+		margin-top: 2em;
+		img{
+			width: 100%;
+		}
+	}
+	#site-title{
+		float: left;
+		margin-left: 1em;
+		margin-top: 2em;
+		h1{
+			font-size: 3.5rem;
+			line-height: 6.250rem;
+			a{
+				color: $white;
+			}
+		}
+	}
+	#site-description{
+		float: right;
+		display: block;
+		background-color: $black;
+		color: $white;
+		opacity: 0.75;
+		font-size: 1rem;
+		position: relative;
+		top: 4rem;
+		right: -2.5rem;
+		padding: 1rem 2.5rem;
 	}
 }

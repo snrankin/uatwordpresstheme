@@ -1,6 +1,20 @@
 .sidebar{
 	font-size: 0.875rem;
+	ul{
+		@include nostyle-ul;
+	}
 }
 .widget{
+	ul{
 	@include nostyle-ul;
+		li{
+			line-height: 2;
+			border-top: $border;
+			&:first-child{
+				border: none;
+			}
+			padding: 0 1em;
+		}
+	}
+	margin: 1em 0;
 }

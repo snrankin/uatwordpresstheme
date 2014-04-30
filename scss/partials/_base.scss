@@ -10,6 +10,9 @@
 	width: 80%;
 	margin: $center;
 }
+#branding{
+	padding: $pad-def;
+}
 
 .main-col{
 	@include equal-height;
@@ -28,4 +31,13 @@
 	width: 100%;
 	padding: $pad-def;
 	background-color: $white;
+}
+#footer{
+	padding: $pad-def/2 $pad-def;
+}
+.footer{
+	@include pie-clearfix;
+	#nav-below{
+		width: 100%;
+	}
 }
