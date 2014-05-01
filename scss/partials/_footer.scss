@@ -1,5 +1,12 @@
 #footer{
-	padding: $pad-def/2 $pad-def;
+	.inner-wrap{
+		@include pie-clearfix;
+		padding: $pad-def/2 $pad-def;
+		.footer-widget{
+			width: 100/3 * 1%;
+			float: left;
+		}
+	}
 }
 .footer{
 	@include pie-clearfix;
