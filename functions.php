@@ -128,8 +128,8 @@ function blankslate_widgets_init()
 register_sidebar( array (
 'name' => __( 'Sidebar Widget Area', 'blankslate' ),
 'id' => 'primary-widget-area',
-'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-'after_widget' => "</li>",
+'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+'after_widget' => "</div>",
 'before_title' => '<h3 class="widget-title">',
 'after_title' => '</h3>',
 ) );
@@ -139,12 +139,37 @@ register_sidebar(array(
 'name' => 'Single Post Sidebar',
 'id' => 'single-sidebar',
 'description' => 'Appears as the sidebar on single posts',
-'before_widget' => '<li id="%1$s" class="widget %2$s">',
-'after_widget' => '</li>',
+'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+'after_widget' => '</div>',
 'before_title' => '<h3 class="widget-title">',
 'after_title' => '</h3>',
 ));
 }
+add_filter('loginout','loginout_text_change');
+function loginout_text_change($text) {
+$login_text_before = 'Log in';
+$login_text_after = 'Log In <i class="fa fa-sign-in"></i>';
+
+$logout_text_before = 'Log out';
+$logout_text_after = 'Log Out <i class="fa fa-sign-out"></i>';
+
+$text = str_replace($login_text_before, $login_text_after ,$text);
+$text = str_replace($logout_text_before, $logout_text_after ,$text);
+return $text;
+}
+add_theme_support('html5', array('search-form')); 
+function my_search_form( $form ) {
+    $form = '<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
+    <div><label class="screen-reader-text" for="s">' . __( 'Search for:' ) . '</label>
+	<i class="fa fa-search"></i>
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" />
+    </div>
+    </form>';
+
+    return $form;
+}
+
+add_filter( 'get_search_form', 'my_search_form' );
 function blankslate_custom_pings( $comment )
 {
 $GLOBALS['comment'] = $comment;
