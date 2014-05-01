@@ -1,0 +1,9 @@
+#footer{
+	padding: $pad-def/2 $pad-def;
+}
+.footer{
+	@include pie-clearfix;
+	#nav-below{
+		width: 100%;
+	}
+}

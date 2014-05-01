@@ -78,3 +78,26 @@ a{
 	display: inline-block;
 	float: right;
 }
+#header, #menu, #main, #footer{
+	width: 100%;
+}
+#footer, #menu{
+	background-color: $gray;
+	color: $white;
+}
+.inner-wrap{
+	max-width: 75.000em;
+	width: 80%;
+	margin: $center;
+}
+.main-col{
+	@include equal-height;
+	width: 70%;
+	padding: $pad-def;
+	background-color: $white;
+}
+.one-col{
+	width: 100%;
+	padding: $pad-def;
+	background-color: $white;
+}

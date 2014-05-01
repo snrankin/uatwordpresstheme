@@ -1,4 +1,8 @@
 .sidebar{
+	@include equal-height;
+	width: 30%;
+	padding: $pad-def;
+	background-color: $light-gray1;
 	font-size: 0.875rem;
 	ul{
 		@include nostyle-ul;
