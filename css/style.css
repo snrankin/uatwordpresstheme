@@ -326,18 +326,16 @@ a:hover {
 .entry-date {
   float: right;
   padding: 0.5em 1em;
-  position: relative;
-  top: -2.5rem;
   background-color: #555555;
   color: white;
 }
 
-/* line 16, ../scss/partials/_entry.scss */
+/* line 14, ../scss/partials/_entry.scss */
 .entry-footer {
   font-size: 0.875em;
 }
 
-/* line 21, ../scss/partials/_entry.scss */
+/* line 19, ../scss/partials/_entry.scss */
 .single .post {
   border-top: none;
 }
