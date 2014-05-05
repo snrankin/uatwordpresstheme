@@ -7,8 +7,8 @@
 
 @font-face {
   font-family: 'AlternateGotNo3D';
-  src: url("fonts/AlternateGotNo3D/alternategotno3d-webfont.eot");
-  src: url("fonts/AlternateGotNo3D/alternategotno3d-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/AlternateGotNo3D/alternategotno3d-webfont.woff") format("woff"), url("fonts/AlternateGotNo3D/alternategotno3d-webfont.ttf") format("truetype"), url("fonts/AlternateGotNo3D/alternategotno3d-webfont.svg#alternategotno3dregular") format("svg");
+  src: url("../fonts/AlternateGotNo3D/alternategotno3d-webfont.eot");
+  src: url("../fonts/AlternateGotNo3D/alternategotno3d-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/AlternateGotNo3D/alternategotno3d-webfont.woff") format("woff"), url("../fonts/AlternateGotNo3D/alternategotno3d-webfont.ttf") format("truetype"), url("../fonts/AlternateGotNo3D/alternategotno3d-webfont.svg#alternategotno3dregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -31,7 +31,7 @@ h1, h2, h3 {
   font-weight: normal;
   margin: 0;
 }
-/* line 43, ../scss/partials/_mixins.scss */
+/* line 37, ../scss/partials/_mixins.scss */
 h1 a, h2 a, h3 a {
   font-family: "AlternateGotNo3D";
   font-weight: normal;
@@ -91,75 +91,111 @@ a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
-  background-color: #9d1c35;
+  background-color: #cccccc;
   text-align: center;
-  color: white;
+  color: #555555;
   float: left;
   display: block;
   padding: 0.5em;
   margin: 0 0.25em;
 }
-/* line 52, ../scss/partials/_mixins.scss */
+/* line 46, ../scss/partials/_mixins.scss */
 .navigation ul li:hover {
-  background-color: #d04f68;
+  background-color: #9d1c35;
 }
-/* line 55, ../scss/partials/_mixins.scss */
+/* line 49, ../scss/partials/_mixins.scss */
 .navigation ul li a {
-  color: white;
+  color: #555555;
   display: block;
   width: 100%;
+  height: 100%;
+}
+/* line 54, ../scss/partials/_mixins.scss */
+.navigation ul li a:hover {
+  color: white;
 }
 /* line 68, ../scss/partials/_global.scss */
 .navigation ul li.active {
-  background-color: #d04f68;
+  background-color: #9d1c35;
+}
+/* line 70, ../scss/partials/_global.scss */
+.navigation ul li.active a {
+  color: white;
 }
 
-/* line 73, ../scss/partials/_global.scss */
+/* line 76, ../scss/partials/_global.scss */
 .nav-previous {
   display: inline-block;
   float: left;
 }
 
-/* line 77, ../scss/partials/_global.scss */
+/* line 80, ../scss/partials/_global.scss */
 .nav-next {
   display: inline-block;
   float: right;
 }
 
-/* line 81, ../scss/partials/_global.scss */
+/* line 84, ../scss/partials/_global.scss */
 #header, #menu, #main, #footer {
   width: 100%;
 }
 
-/* line 84, ../scss/partials/_global.scss */
+/* line 87, ../scss/partials/_global.scss */
 #footer, #menu {
   background-color: #555555;
   color: white;
 }
 
-/* line 88, ../scss/partials/_global.scss */
+/* line 91, ../scss/partials/_global.scss */
 .inner-wrap {
   max-width: 75.000em;
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 93, ../scss/partials/_global.scss */
+/* line 96, ../scss/partials/_global.scss */
 .main-col {
   float: none;
   vertical-align: top;
   display: table-cell;
   width: 70%;
-  padding: 2.5em;
+  padding: 5rem 2.5em;
   background-color: white;
 }
 
-/* line 99, ../scss/partials/_global.scss */
+/* line 102, ../scss/partials/_global.scss */
 .one-col {
   width: 100%;
   padding: 2.5em;
   background-color: white;
+}
+
+/* line 107, ../scss/partials/_global.scss */
+.button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #cccccc;
+  text-align: center;
+}
+/* line 46, ../scss/partials/_mixins.scss */
+.button:hover {
+  background-color: #9d1c35;
+}
+/* line 49, ../scss/partials/_mixins.scss */
+.button a {
+  color: #555555;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 54, ../scss/partials/_mixins.scss */
+.button a:hover {
+  color: white;
 }
 
 /* line 2, ../scss/partials/_navbar.scss */
@@ -189,13 +225,13 @@ a:hover {
 #menu .inner-wrap .menu-main-menu-container:after {
   clear: both;
 }
-/* line 72, ../scss/partials/_mixins.scss */
+/* line 70, ../scss/partials/_mixins.scss */
 #menu .inner-wrap .menu-main-menu-container ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 76, ../scss/partials/_mixins.scss */
+/* line 74, ../scss/partials/_mixins.scss */
 #menu .inner-wrap .menu-main-menu-container ul li {
   float: left;
   display: inline-block;
@@ -217,26 +253,10 @@ a:hover {
   color: #d04f68;
 }
 /* line 23, ../scss/partials/_navbar.scss */
-#menu .inner-wrap #search {
+#menu .inner-wrap .button {
   float: right;
-  height: 1.875em;
-}
-/* line 26, ../scss/partials/_navbar.scss */
-#menu .inner-wrap #search .screen-reader-text {
-  display: none;
-}
-/* line 29, ../scss/partials/_navbar.scss */
-#menu .inner-wrap #search .fa {
-  line-height: 1.875em;
-}
-/* line 32, ../scss/partials/_navbar.scss */
-#menu .inner-wrap #search #s {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
-  height: 1.875em;
-  padding: .5em;
+  display: inline-block;
+  padding: 0.25em 1em;
 }
 
 /* line 1, ../scss/partials/_header.scss */
@@ -303,11 +323,6 @@ a:hover {
 }
 
 /* line 8, ../scss/partials/_entry.scss */
-.entry-title {
-  margin-top: 2.5rem;
-}
-
-/* line 11, ../scss/partials/_entry.scss */
 .entry-date {
   float: right;
   padding: 0.5em 1em;
@@ -317,12 +332,12 @@ a:hover {
   color: white;
 }
 
-/* line 19, ../scss/partials/_entry.scss */
+/* line 16, ../scss/partials/_entry.scss */
 .entry-footer {
   font-size: 0.875em;
 }
 
-/* line 24, ../scss/partials/_entry.scss */
+/* line 21, ../scss/partials/_entry.scss */
 .single .post {
   border-top: none;
 }
@@ -345,30 +360,80 @@ a:hover {
 }
 
 /* line 11, ../scss/partials/_sidebar.scss */
-.widget {
-  margin: 1em 0;
+#search {
+  width: 100%;
+  height: 1.875em;
+  position: relative;
 }
-/* line 12, ../scss/partials/_sidebar.scss */
-.widget ul {
+/* line 15, ../scss/partials/_sidebar.scss */
+#search .screen-reader-text {
+  display: none;
+}
+/* line 18, ../scss/partials/_sidebar.scss */
+#search .fa {
+  line-height: 2rem;
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1.35rem;
+}
+/* line 24, ../scss/partials/_sidebar.scss */
+#search #s {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  height: 2rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border: solid 1px #555555;
+}
+
+/* line 32, ../scss/partials/_sidebar.scss */
+.text-widget, .abh_box {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.text-widget:after, .abh_box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 35, ../scss/partials/_sidebar.scss */
+.widget-container {
+  *zoom: 1;
+  margin: 3em 0;
+}
+/* line 38, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.widget-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 37, ../scss/partials/_sidebar.scss */
+.widget-container ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 14, ../scss/partials/_sidebar.scss */
-.widget ul li {
+/* line 39, ../scss/partials/_sidebar.scss */
+.widget-container ul li {
   line-height: 2;
   border-top: solid 1px #555555;
   padding: 0 1em;
 }
-/* line 17, ../scss/partials/_sidebar.scss */
-.widget ul li:first-child {
+/* line 42, ../scss/partials/_sidebar.scss */
+.widget-container ul li:first-child {
   border: none;
 }
 
 /* line 2, ../scss/partials/_footer.scss */
 #footer .inner-wrap {
+  width: 75rem;
   *zoom: 1;
   padding: 1.25em 2.5em;
+  font-size: 0.875rem;
 }
 /* line 38, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #footer .inner-wrap:after {
@@ -376,13 +441,21 @@ a:hover {
   display: table;
   clear: both;
 }
-/* line 5, ../scss/partials/_footer.scss */
+/* line 7, ../scss/partials/_footer.scss */
 #footer .inner-wrap .footer-widget {
   width: 33.33333%;
   float: left;
 }
+/* line 10, ../scss/partials/_footer.scss */
+#footer .inner-wrap .footer-widget a {
+  color: white;
+}
+/* line 13, ../scss/partials/_footer.scss */
+#footer .inner-wrap .footer-widget .fa {
+  font-size: 1rem;
+}
 
-/* line 11, ../scss/partials/_footer.scss */
+/* line 19, ../scss/partials/_footer.scss */
 .footer {
   *zoom: 1;
 }
@@ -392,7 +465,7 @@ a:hover {
   display: table;
   clear: both;
 }
-/* line 13, ../scss/partials/_footer.scss */
+/* line 21, ../scss/partials/_footer.scss */
 .footer #nav-below {
   width: 100%;
 }

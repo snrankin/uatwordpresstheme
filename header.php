@@ -13,8 +13,10 @@
 <nav id="menu" role="navigation">
 <div class="inner-wrap">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-<div id="search">
-<?php get_search_form(); ?>
+<div id="login">
+	<div class="button">
+    	<?php wp_loginout(); ?>
+    </div>
 </div>
 </div>
 </nav>

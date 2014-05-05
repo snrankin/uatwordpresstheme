@@ -20,20 +20,10 @@
 				}	
 			}
 		}
-		#search{
+		.button{
 			float: right;
-			height: 1.875em;
-			.screen-reader-text{
-				display: none;
-			}
-			.fa{
-				line-height: 1.875em;
-			}
-			#s{
-				@include border-radius(20px);
-				height: 1.875em;
-				padding: .5em;
-			}
+			display: inline-block;
+			padding: 0.25em 1em;
 		}
 	}
 }

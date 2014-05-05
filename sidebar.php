@@ -1,12 +1,15 @@
 <aside id="sidebar" role="complementary" class="sidebar">
-<div id="categories" class="widget">
-<h2>Categories</h2>
+<div id="search" class="widget-container">
+	<?php get_search_form(); ?>
+</div>
+<div id="categories" class="widget-container">
+<h3>Categories</h3>
 	<ul>
 		<?php wp_list_categories('orderby=name&show_count=1&show_option_all=&title_li='); ?> 
     </ul>
 </div>
-<div id="quotes" >
-	<h2>Why UAT?</h2>
+<div id="quotes" class="widget-container" >
+	<h3>Why UAT?</h3>
     <p>Hear from the students themselves as to why they chose to attend UAT: </p>
     <div id="why-uat" >
         <ul class="bjqs">
@@ -43,12 +46,9 @@
             <?php endif; ?>
         </ul>
     </div>
+    <div class="button"><a href="<?php echo get_page_link(1532); ?>">see more</a></div>
 </div>
 <?php if ( is_active_sidebar( 'primary-widget-area' ) ) : ?>
-<div id="primary" class="widget">
-<ul>
 <?php dynamic_sidebar( 'primary-widget-area' ); ?>
-</ul>
-</div>
 <?php endif; ?>
 </aside>

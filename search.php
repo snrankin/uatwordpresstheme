@@ -2,7 +2,7 @@
 <section id="content" role="main" class="main-col">
 <?php if ( have_posts() ) : ?>
 <header class="header">
-<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'blankslate' ), get_search_query() ); ?></h1>
+<h1 class="entry-title"><?php /* Search Count */ $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('<span class="search-terms">'); echo $key; _e('</span>'); _e(' &mdash; '); echo $count . ' '; _e('articles'); wp_reset_query(); ?></h1>
 </header>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>

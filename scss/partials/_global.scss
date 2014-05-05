@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: 'AlternateGotNo3D';
-    src: url('fonts/AlternateGotNo3D/alternategotno3d-webfont.eot');
-    src: url('fonts/AlternateGotNo3D/alternategotno3d-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/AlternateGotNo3D/alternategotno3d-webfont.woff') format('woff'),
-         url('fonts/AlternateGotNo3D/alternategotno3d-webfont.ttf') format('truetype'),
-         url('fonts/AlternateGotNo3D/alternategotno3d-webfont.svg#alternategotno3dregular') format('svg');
+    src: url('../fonts/AlternateGotNo3D/alternategotno3d-webfont.eot');
+    src: url('../fonts/AlternateGotNo3D/alternategotno3d-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AlternateGotNo3D/alternategotno3d-webfont.woff') format('woff'),
+         url('../fonts/AlternateGotNo3D/alternategotno3d-webfont.ttf') format('truetype'),
+         url('../fonts/AlternateGotNo3D/alternategotno3d-webfont.svg#alternategotno3dregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -59,14 +59,17 @@ a{
 		@include clearfix;
 		li{
 			@include button;
-			color: $white;
+			color: $gray;
 			float: left;
 			display: block;
 			padding: 0.5em;
 			margin: 0 0.25em;
 		}
 		li.active{
-			background-color: $light-red;
+			background-color: $red;
+			a{
+				color: $white;
+			}
 		}
 	}
 }
@@ -93,11 +96,14 @@ a{
 .main-col{
 	@include equal-height;
 	width: 70%;
-	padding: $pad-def;
+	padding: 5rem $pad-def;
 	background-color: $white;
 }
 .one-col{
 	width: 100%;
 	padding: $pad-def;
 	background-color: $white;
+}
+.button{
+	@include button;
 }
