@@ -637,3 +637,8 @@ p.bjqs-caption {
   position: absolute;
   bottom: 0;
 }
+
+/* line 1, ../scss/partials/_authorlist.scss */
+.user {
+  width: 20%;
+}
