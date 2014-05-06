@@ -118,6 +118,31 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+function contributors() {
+global $wpdb;
+
+$authors = $wpdb->get_results("SELECT ID, user_nicename from $wpdb->users WHERE user_nicename != 'admin' ORDER BY display_name");
+
+foreach ($authors as $author ) {
+
+	echo "<li>";
+	echo '<div class="authorphoto">';
+	echo "<a href=\"".get_bloginfo('url')."/author/";
+	the_author_meta('user_nicename', $author->ID);
+	echo "/\">";
+	echo userphoto_thumbnail($author->ID);
+	echo "</a>";
+	echo "</div>";
+	echo '<div class="authorname">';
+	echo "<a href=\"".get_bloginfo('url')."/author/";
+	the_author_meta('user_nicename', $author->ID);
+	echo "/\">";
+	the_author_meta('display_name', $author->ID);
+	echo "</a>";
+	echo "</div>";
+	echo "</li>";
+	}
+}
 // Allow widgets to use shortcodes
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');

@@ -1,0 +1,288 @@
+.abh_box{
+	position:relative;
+	width:100%;
+	margin-bottom: 2rem;
+	.abh_tabs{
+		@include nostyle-ul;
+		display:none;
+		position: absolute;
+		top: 80px;
+		font-size: 0.8rem;
+		li{
+			display:block;
+		}
+		li.abh_active{
+			a{
+				font-weight: bold;
+			}
+		}
+	}
+	.abh_tab_content{
+		overflow:hidden;
+		border-bottom:0px solid #ddd;
+		min-height: 140px;
+		.abh_tab{
+			display:none;
+			border:none;
+		}
+		.abh_image{
+			display:block;
+			float:left;
+			width:80px;
+			img{
+				@include border-radius(50%);
+				@include box-shadow(rgba(0, 0, 0, 0.2) 0px 1px 4px);
+				overflow:hidden;
+				cursor:pointer;
+				width: 80px;
+				height: 80px;
+			}
+		}
+		.abh_text{
+			margin: 0 0 2rem 7rem;
+			line-height:1.5;
+			h3{
+				text-transform:capitalize;
+				border-bottom:1px solid #ddd;
+				cursor:pointer;
+				.abh_arrow{
+					width: 20px;
+					height: 20px;
+					&:after{
+						content: '\f078';
+						font-family: $FA;
+						margin-left: 5px;
+					}
+				}
+				.abh_arrow.abh_active{
+					width: 20px;
+					height: 20px;
+					&:after{
+						content: '\f077';
+						font-family: $FA;
+						margin-left: 5px;
+					}
+				}
+			}
+			h4{
+				text-transform:capitalize;
+				border-bottom:1px solid #ddd;
+				cursor:pointer;
+				font-family: $AG;
+			}
+			.abh_allposts{
+				display:none;
+			}
+		}
+		.abh_social{
+			float: right;
+			text-align: left !important;
+			display:none;
+			a.abh_facebook{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:before{
+					content: '\f082';
+					font-family: $FA;
+				}
+			}
+			a.abh_flickr{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f16e';
+					font-family: $FA;
+				}
+			}
+			a.abh_google{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f0d4';
+					font-family: $FA;
+				}
+			}
+			a.abh_instagram{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f16d';
+					font-family: $FA;
+				}
+			}
+			a.abh_linkedin{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f08c';
+					font-family: $FA;
+				}
+			}
+			a.abh_pinterest{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f0d2';
+					font-family: $FA;
+				}
+			}
+			a.abh_tumblr{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f174';
+					font-family: $FA;
+				}
+			}
+			a.abh_twitter{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f081';
+					font-family: $FA;
+				}
+			}
+			a.abh_vimeo{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f194';
+					font-family: $FA;
+				}
+			}
+			a.abh_youtube{
+				font-size: 1.5rem;
+				margin-right: 0.25rem;
+				&:after{
+					content: '\f166';
+					font-family: $FA;
+				}
+			}
+		}
+		.abh_description{
+			display:none;
+			width:100%;
+		}
+	}
+}
+
+.abh_box .vcard{background:none;font-size:100%;border:none;}
+.abh_box .abh_pwb{display:none}
+.abh_box .abh_pwb a{position:absolute;text-decoration:none;}
+
+#authors{
+	@include pie-clearfix;
+	.abh_box{
+		width:100px/3px * 1%;
+		margin-bottom: 2rem;
+		padding: 0 1rem;
+		float: left;
+		.abh_tabs{
+			@include nostyle-ul;
+			@include pie-clearfix;
+			display:none;
+			font-size: 0.8rem;
+			width: 90%;
+			margin-top: 7rem;
+			border-bottom: solid 1px $red;
+			li{
+				display:block;
+				float: left;
+				text-align: center;
+				padding: 0.5rem 1rem;
+			}
+			li.abh_active{
+				background-color: $red;
+				a{
+					font-weight: bold;
+					color: $white;
+				}
+			}
+		}
+		.abh_tab_content{
+			overflow:hidden;
+			border: none;
+			border-color: #FFF;
+			min-height: 140px;
+			.abh_tab{
+				display:none;
+				border:none;
+			}
+			.abh_image{
+				display:block;
+				clear: both;
+				width: 100%;
+				margin: 0 auto;
+				img{
+					@include border-radius(50%);
+					@include box-shadow(rgba(0, 0, 0, 0.2) 0px 1px 4px);
+					overflow:hidden;
+					cursor:pointer;
+					width: 80px;
+					height: 80px;
+					text-align: center;
+				}
+			}
+			.abh_text{
+				line-height:1.5;
+				display: block;
+				margin: 0;
+				width: 100%;
+				h3{
+					text-transform:capitalize;
+					border: none;
+					position: absolute;
+					top: 5.5rem;
+					cursor:pointer;
+					display: block;
+					text-align: center;
+					.abh_arrow{
+						width: 20px;
+						height: 20px;
+						&:after{
+							content: '\f078';
+							font-family: $FA;
+							margin-left: 5px;
+						}
+					}
+					.abh_arrow.abh_active{
+						width: 20px;
+						height: 20px;
+						&:after{
+							content: '\f077';
+							font-family: $FA;
+							margin-left: 5px;
+						}
+					}
+				}
+				h4{
+					text-transform:capitalize;
+					border-bottom:1px solid #ddd;
+					cursor:pointer;
+					font-family: $AG;
+				}
+				.abh_allposts{
+					display:none;
+				}
+				.abh_description{
+					display:none;
+					width:100%;
+					padding-top: 15rem;
+				}
+			}
+			.abh_social{
+				position: absolute;
+				color: $white;
+				top: 7rem;
+				display: block;
+				width: 100%;
+				text-align: left !important;
+				display:none;
+			}
+		}
+	}
+	
+	.abh_box .vcard{background:none;font-size:100%;border:none;}
+	.abh_box .abh_pwb{display:none}
+	.abh_box .abh_pwb a{position:absolute;text-decoration:none;}
+}
