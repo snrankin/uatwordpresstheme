@@ -707,173 +707,175 @@ p.bjqs-caption {
 /* line 44, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_text h3 {
   text-transform: capitalize;
-  border-bottom: 1px solid #ddd;
+  border-bottom: none;
   cursor: pointer;
+  font-size: 1.6rem;
 }
-/* line 48, ../scss/partials/_starbox.scss */
+/* line 49, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_text h3 .abh_arrow {
+  background: none;
   width: 20px;
   height: 20px;
 }
-/* line 51, ../scss/partials/_starbox.scss */
+/* line 53, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_text h3 .abh_arrow:after {
   content: '\f078';
   font-family: "FontAwesome";
   margin-left: 5px;
 }
-/* line 57, ../scss/partials/_starbox.scss */
+/* line 59, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_text h3 .abh_arrow.abh_active {
   width: 20px;
   height: 20px;
 }
-/* line 60, ../scss/partials/_starbox.scss */
+/* line 62, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_text h3 .abh_arrow.abh_active:after {
   content: '\f077';
   font-family: "FontAwesome";
   margin-left: 5px;
 }
-/* line 67, ../scss/partials/_starbox.scss */
+/* line 69, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_text h4 {
   text-transform: capitalize;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
   font-family: "AlternateGotNo3D";
 }
-/* line 73, ../scss/partials/_starbox.scss */
+/* line 75, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_text .abh_allposts {
   display: none;
 }
-/* line 77, ../scss/partials/_starbox.scss */
+/* line 79, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social {
   float: right;
   text-align: left !important;
   display: none;
 }
-/* line 81, ../scss/partials/_starbox.scss */
+/* line 83, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_facebook {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 84, ../scss/partials/_starbox.scss */
+/* line 86, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_facebook:before {
   content: '\f082';
   font-family: "FontAwesome";
 }
-/* line 89, ../scss/partials/_starbox.scss */
+/* line 91, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_flickr {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 92, ../scss/partials/_starbox.scss */
+/* line 94, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_flickr:after {
   content: '\f16e';
   font-family: "FontAwesome";
 }
-/* line 97, ../scss/partials/_starbox.scss */
+/* line 99, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_google {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 100, ../scss/partials/_starbox.scss */
+/* line 102, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_google:after {
   content: '\f0d4';
   font-family: "FontAwesome";
 }
-/* line 105, ../scss/partials/_starbox.scss */
+/* line 107, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_instagram {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 108, ../scss/partials/_starbox.scss */
+/* line 110, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_instagram:after {
   content: '\f16d';
   font-family: "FontAwesome";
 }
-/* line 113, ../scss/partials/_starbox.scss */
+/* line 115, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_linkedin {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 116, ../scss/partials/_starbox.scss */
+/* line 118, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_linkedin:after {
   content: '\f08c';
   font-family: "FontAwesome";
 }
-/* line 121, ../scss/partials/_starbox.scss */
+/* line 123, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_pinterest {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 124, ../scss/partials/_starbox.scss */
+/* line 126, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_pinterest:after {
   content: '\f0d2';
   font-family: "FontAwesome";
 }
-/* line 129, ../scss/partials/_starbox.scss */
+/* line 131, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_tumblr {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 132, ../scss/partials/_starbox.scss */
+/* line 134, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_tumblr:after {
   content: '\f174';
   font-family: "FontAwesome";
 }
-/* line 137, ../scss/partials/_starbox.scss */
+/* line 139, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_twitter {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 140, ../scss/partials/_starbox.scss */
+/* line 142, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_twitter:after {
   content: '\f081';
   font-family: "FontAwesome";
 }
-/* line 145, ../scss/partials/_starbox.scss */
+/* line 147, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_vimeo {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 148, ../scss/partials/_starbox.scss */
+/* line 150, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_vimeo:after {
   content: '\f194';
   font-family: "FontAwesome";
 }
-/* line 153, ../scss/partials/_starbox.scss */
+/* line 155, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_youtube {
   font-size: 1.5rem;
   margin-right: 0.25rem;
 }
-/* line 156, ../scss/partials/_starbox.scss */
+/* line 158, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_social a.abh_youtube:after {
   content: '\f166';
   font-family: "FontAwesome";
 }
-/* line 162, ../scss/partials/_starbox.scss */
+/* line 164, ../scss/partials/_starbox.scss */
 .abh_box .abh_tab_content .abh_description {
   display: none;
   width: 100%;
 }
 
-/* line 169, ../scss/partials/_starbox.scss */
+/* line 171, ../scss/partials/_starbox.scss */
 .abh_box .vcard {
   background: none;
   font-size: 100%;
   border: none;
 }
 
-/* line 170, ../scss/partials/_starbox.scss */
+/* line 172, ../scss/partials/_starbox.scss */
 .abh_box .abh_pwb {
   display: none;
 }
 
-/* line 171, ../scss/partials/_starbox.scss */
+/* line 173, ../scss/partials/_starbox.scss */
 .abh_box .abh_pwb a {
   position: absolute;
   text-decoration: none;
 }
 
-/* line 173, ../scss/partials/_starbox.scss */
+/* line 175, ../scss/partials/_starbox.scss */
 #authors {
   *zoom: 1;
 }
@@ -883,14 +885,14 @@ p.bjqs-caption {
   display: table;
   clear: both;
 }
-/* line 175, ../scss/partials/_starbox.scss */
+/* line 177, ../scss/partials/_starbox.scss */
 #authors .abh_box {
   width: 33.33333%;
   margin-bottom: 2rem;
   padding: 0 1rem;
   float: left;
 }
-/* line 180, ../scss/partials/_starbox.scss */
+/* line 182, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tabs {
   list-style: none;
   margin: 0;
@@ -899,8 +901,9 @@ p.bjqs-caption {
   display: none;
   font-size: 0.8rem;
   width: 90%;
-  margin-top: 7rem;
   border-bottom: solid 1px #9d1c35;
+  position: absolute;
+  top: 7rem;
 }
 /* line 38, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #authors .abh_box .abh_tabs:after {
@@ -908,42 +911,41 @@ p.bjqs-caption {
   display: table;
   clear: both;
 }
-/* line 188, ../scss/partials/_starbox.scss */
+/* line 191, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tabs li {
   display: block;
   float: left;
   text-align: center;
   padding: 0.5rem 1rem;
 }
-/* line 194, ../scss/partials/_starbox.scss */
+/* line 197, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tabs li.abh_active {
   background-color: #9d1c35;
 }
-/* line 196, ../scss/partials/_starbox.scss */
+/* line 199, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tabs li.abh_active a {
   font-weight: bold;
   color: white;
 }
-/* line 202, ../scss/partials/_starbox.scss */
+/* line 205, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content {
   overflow: hidden;
   border: none;
   border-color: #FFF;
-  min-height: 140px;
 }
-/* line 207, ../scss/partials/_starbox.scss */
+/* line 209, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_tab {
   display: none;
   border: none;
 }
-/* line 211, ../scss/partials/_starbox.scss */
+/* line 213, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_image {
   display: block;
   clear: both;
   width: 100%;
   margin: 0 auto;
 }
-/* line 216, ../scss/partials/_starbox.scss */
+/* line 218, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_image img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -959,83 +961,104 @@ p.bjqs-caption {
   height: 80px;
   text-align: center;
 }
-/* line 226, ../scss/partials/_starbox.scss */
+/* line 228, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_text {
   line-height: 1.5;
   display: block;
   margin: 0;
   width: 100%;
 }
-/* line 231, ../scss/partials/_starbox.scss */
-#authors .abh_box .abh_tab_content .abh_text h3 {
+/* line 233, ../scss/partials/_starbox.scss */
+#authors .abh_box .abh_tab_content .abh_text h3.name {
   text-transform: capitalize;
   border: none;
-  position: absolute;
-  top: 5.5rem;
   cursor: pointer;
   display: block;
+  height: 2.5rem;
   text-align: center;
+  line-height: 1;
+  margin: 0;
 }
-/* line 239, ../scss/partials/_starbox.scss */
-#authors .abh_box .abh_tab_content .abh_text h3 .abh_arrow {
+/* line 242, ../scss/partials/_starbox.scss */
+#authors .abh_box .abh_tab_content .abh_text h3.name .abh_arrow {
   width: 20px;
   height: 20px;
 }
-/* line 242, ../scss/partials/_starbox.scss */
-#authors .abh_box .abh_tab_content .abh_text h3 .abh_arrow:after {
+/* line 245, ../scss/partials/_starbox.scss */
+#authors .abh_box .abh_tab_content .abh_text h3.name .abh_arrow:after {
   content: '\f078';
   font-family: "FontAwesome";
   margin-left: 5px;
 }
-/* line 248, ../scss/partials/_starbox.scss */
-#authors .abh_box .abh_tab_content .abh_text h3 .abh_arrow.abh_active {
+/* line 251, ../scss/partials/_starbox.scss */
+#authors .abh_box .abh_tab_content .abh_text h3.name .abh_arrow.abh_active {
   width: 20px;
   height: 20px;
 }
-/* line 251, ../scss/partials/_starbox.scss */
-#authors .abh_box .abh_tab_content .abh_text h3 .abh_arrow.abh_active:after {
+/* line 254, ../scss/partials/_starbox.scss */
+#authors .abh_box .abh_tab_content .abh_text h3.name .abh_arrow.abh_active:after {
   content: '\f077';
   font-family: "FontAwesome";
   margin-left: 5px;
 }
-/* line 258, ../scss/partials/_starbox.scss */
+/* line 261, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_text h4 {
   text-transform: capitalize;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
   font-family: "AlternateGotNo3D";
 }
-/* line 264, ../scss/partials/_starbox.scss */
+/* line 267, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_text .abh_allposts {
   display: none;
 }
-/* line 267, ../scss/partials/_starbox.scss */
+/* line 270, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_text .abh_description {
+  *zoom: 1;
   display: none;
   width: 100%;
-  padding-top: 15rem;
+  font-size: 0.875rem;
+  position: relative;
+  top: 5rem;
+  padding-bottom: 5rem;
 }
-/* line 273, ../scss/partials/_starbox.scss */
+/* line 38, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#authors .abh_box .abh_tab_content .abh_text .abh_description:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 279, ../scss/partials/_starbox.scss */
+#authors .abh_box .abh_tab_content .abh_text .abh_job {
+  display: none;
+  font-size: 0.875rem;
+  position: relative;
+  padding-bottom: 1rem;
+  top: 5rem;
+}
+/* line 285, ../scss/partials/_starbox.scss */
+#authors .abh_box .abh_tab_content .abh_text .abh_job .title, #authors .abh_box .abh_tab_content .abh_text .abh_job .org {
+  display: block;
+}
+/* line 290, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_tab_content .abh_social {
-  position: absolute;
   color: white;
-  top: 7rem;
   display: block;
   width: 100%;
   text-align: left !important;
   display: none;
 }
-/* line 285, ../scss/partials/_starbox.scss */
+/* line 300, ../scss/partials/_starbox.scss */
 #authors .abh_box .vcard {
   background: none;
   font-size: 100%;
   border: none;
 }
-/* line 286, ../scss/partials/_starbox.scss */
+/* line 301, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_pwb {
   display: none;
 }
-/* line 287, ../scss/partials/_starbox.scss */
+/* line 302, ../scss/partials/_starbox.scss */
 #authors .abh_box .abh_pwb a {
   position: absolute;
   text-decoration: none;

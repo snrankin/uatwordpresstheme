@@ -43,9 +43,11 @@
 			line-height:1.5;
 			h3{
 				text-transform:capitalize;
-				border-bottom:1px solid #ddd;
+				border-bottom: none;
 				cursor:pointer;
+				font-size: 1.6rem;
 				.abh_arrow{
+					background: none;
 					width: 20px;
 					height: 20px;
 					&:after{
@@ -183,8 +185,9 @@
 			display:none;
 			font-size: 0.8rem;
 			width: 90%;
-			margin-top: 7rem;
 			border-bottom: solid 1px $red;
+			position: absolute;
+			top: 7rem;
 			li{
 				display:block;
 				float: left;
@@ -203,7 +206,6 @@
 			overflow:hidden;
 			border: none;
 			border-color: #FFF;
-			min-height: 140px;
 			.abh_tab{
 				display:none;
 				border:none;
@@ -228,14 +230,15 @@
 				display: block;
 				margin: 0;
 				width: 100%;
-				h3{
+				h3.name{
 					text-transform:capitalize;
 					border: none;
-					position: absolute;
-					top: 5.5rem;
 					cursor:pointer;
 					display: block;
+					height: 2.5rem;
 					text-align: center;
+					line-height: 1;
+					margin: 0;
 					.abh_arrow{
 						width: 20px;
 						height: 20px;
@@ -265,15 +268,27 @@
 					display:none;
 				}
 				.abh_description{
+					@include pie-clearfix;
 					display:none;
 					width:100%;
-					padding-top: 15rem;
+					font-size: 0.875rem;
+					position: relative;
+					top: 5rem;
+					padding-bottom: 5rem;
+				}
+				.abh_job{
+					display:none;
+					font-size: 0.875rem;
+					position: relative;
+					padding-bottom: 1rem;
+					top: 5rem;
+					.title, .org{
+						display: block;
+					}
 				}
 			}
 			.abh_social{
-				position: absolute;
 				color: $white;
-				top: 7rem;
 				display: block;
 				width: 100%;
 				text-align: left !important;

@@ -143,6 +143,7 @@ foreach ($authors as $author ) {
 	echo "</li>";
 	}
 }
+
 // Allow widgets to use shortcodes
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
